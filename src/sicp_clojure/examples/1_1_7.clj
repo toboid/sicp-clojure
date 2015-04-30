@@ -1,3 +1,12 @@
+;; Newton's method for approximating square roots
+;; To find the square root of x, make a guess y.
+;; Test if the guess is close enough (to a given tolerance).
+;; If the guess is not close enough, use the following formula to
+;; calculate an improved guess and iterate until a satisfactory answer is obtained.
+;; next-guess =   x/y + y
+;;              -----------
+;;                   2
+
 (ns sicp-clojure.examples.1-1-7
   (:require [sicp-clojure.examples.1-1-4 :refer :all]))
 
