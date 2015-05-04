@@ -1,3 +1,7 @@
+(ns sicp-clojure.exercises.1-6
+  (:require [clojure.test :refer :all]
+            [sicp-clojure.examples.1-1-7 :refer :all]))
+
 ;; Exercise 1.6:
 ;; Alyssa P. Hacker doesn’t see why if needs to be pro-
 ;; vided as a special form. “Why can’t I just define it as an ordinary
@@ -19,10 +23,6 @@
 ;;                 (sqrt-iter (improve guess x) x)))
 ;; What happens when Alyssa attempts to use this to compute square
 ;; roots? Explain.
-
-(ns sicp-clojure.exercises.1-6
-  (:require [clojure.test :refer :all]
-            [sicp-clojure.examples.1-1-7 :refer :all]))
 
 (defn- new-if [predicate then-clause else-clause]
   (cond predicate then-clause

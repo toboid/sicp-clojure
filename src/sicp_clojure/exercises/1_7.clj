@@ -1,3 +1,8 @@
+(ns sicp-clojure.exercises.1-7
+  (:require [clojure.test :refer :all]
+            [sicp-clojure.examples.1-1-4 :refer :all]
+            [sicp-clojure.examples.1-1-7 :refer :all]))
+
 ;; Exercise 1.7:
 ;; The good-enough? test used in computing square
 ;; roots will not be very effective for finding the square roots of very
@@ -18,11 +23,6 @@
 ;; finding a guess which is within the required tolerance.
 ;; In scheme the procedure would never complete, it causes a stack overflow since
 ;; Clojure does not have tail recursion.
-
-(ns sicp-clojure.exercises.1-7
-  (:require [clojure.test :refer :all]
-            [sicp-clojure.examples.1-1-4 :refer :all]
-            [sicp-clojure.examples.1-1-7 :refer :all]))
 
 (defn- nearly-equal? [x y tolerance]
   (< (Math/abs (- x y)) tolerance))

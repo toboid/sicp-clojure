@@ -1,11 +1,12 @@
+(ns sicp-clojure.exercises.1-8
+  (:require [clojure.test :refer :all]))
+
 ;; Newton's method for cube roots is based on the fact that if y is an approximation to the cube root of x,
 ;; then a better approximation is given by the value
 ;;
 ;; (x / (y * y)) + 2y
 ;; ------------------
 ;;         3
-(ns sicp-clojure.exercises.1-8
-  (:require [clojure.test :refer :all]))
 
 (defn- square [x] (* x x))
 (defn- cube [x] (* x x x ))

@@ -1,10 +1,10 @@
+(ns sicp-clojure.exercises.1-1
+  (:require [clojure.test :refer :all]))
+
 ;; Exercise 1.1.
 ;; Below is a sequence of expressions.
 ;; What is the result printed by the interpreter in response to each expression?
 ;; Assume that the sequence is to be evaluated in the order in which it is presented.
-
-(ns sicp-clojure.exercises.1-1
-  (:require [clojure.test :refer :all]))
 
 (deftest ex_1.1
   (is (= 10 10))
